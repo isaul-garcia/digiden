@@ -36,7 +36,7 @@ function App() {
       <NavbarSticky isScroll={isScroll} />
       <Navbar />
       <Switch>
-          <Route path="/" exact component={Home}/>
+          <Route path="/digiden" exact component={Home}/>
           <Route path="/article" exact component={Article} />
         </Switch>
       <Footer />
