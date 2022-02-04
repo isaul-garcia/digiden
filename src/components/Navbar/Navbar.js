@@ -25,14 +25,14 @@ const Navbox = () => {
                 <TopContainer>
                     <Top />
                     <DateText>{d}</DateText>
-                    <LinkThis to="/digiden"><LogoType src={DigidenLight} /></LinkThis>
+                    <LinkThis to="/"><LogoType src={DigidenLight} /></LinkThis>
                 </TopContainer>
                 <NavbarContainer>
                     <Navbar>
-                        <Nav to="/digiden">Reviews</Nav>
-                        <Nav onClick={() => {window.scrollTo({top: 0, behavior: "smooth"});}} to="/digiden">Tech</Nav>
-                        <Nav onClick={() => {window.scrollTo({top: 0, behavior: "smooth"});}} to="/digiden">Science</Nav>
-                        <Nav onClick={() => {window.scrollTo({top: 0, behavior: "smooth"});}} to="/digiden">Gaming</Nav>
+                        <Nav to="/">Reviews</Nav>
+                        <Nav onClick={() => {window.scrollTo({top: 0, behavior: "smooth"});}} to="/">Tech</Nav>
+                        <Nav onClick={() => {window.scrollTo({top: 0, behavior: "smooth"});}} to="/">Science</Nav>
+                        <Nav onClick={() => {window.scrollTo({top: 0, behavior: "smooth"});}} to="/">Gaming</Nav>
                         <NavIcon><RiUser3Fill /></NavIcon>
                         <NavIcon><RiTwitterFill /></NavIcon>
                         <NavIcon><FaYoutube /></NavIcon>

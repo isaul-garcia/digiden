@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import WebFont from 'webfontloader';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import GlobalStyle from './globalStyles';
 import { Navbar, Footer, NavbarSticky } from './components';
 import {
@@ -36,8 +36,8 @@ function App() {
       <NavbarSticky isScroll={isScroll} />
       <Navbar />
       <Switch>
-          <Route path="/digiden" exact component={Home}/>
-          <Route path="/article" exact component={Article} />
+          <Route path="/" exact component={Home}/>
+          <Route path="/article/" exact component={Article} />
         </Switch>
       <Footer />
     </Router>
