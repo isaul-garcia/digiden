@@ -1,8 +1,10 @@
 import React from 'react';
+import {useHistory} from 'react-router-dom';
 import {
     ArticleGallery,
     FeaturedContainer,
     ArticleThumbnail,
+    ArticleThumbnailX,
     ArticleThumbnailSingle,
     ArticleThumbnailThree,
     ThumbnailTextWrap,
@@ -29,11 +31,12 @@ import user1 from '../../images/user1.jpg'
 import user2 from '../../images/user2.jpg'
 
 const Navbox = () => {
+    let history = useHistory()
     return (
         <>   
             <FeaturedContainer>
                 <ArticleGallery>
-                    <ArticleThumbnail onClick={() => {window.scrollTo({top: 0, behavior: "smooth"});}} to="/article">
+                    <ArticleThumbnailX onClick={()=>history.push('/article')}>
                         <ThumbnailContainer>
                             <ThumbnailImage src={Image1} />
                             <ThumbnailTextWrap>
@@ -50,7 +53,7 @@ const Navbox = () => {
                                 </ThumbnailAuthor>
                             </ThumbnailTextWrap>
                         </ThumbnailContainer>
-                    </ArticleThumbnail>
+                    </ArticleThumbnailX>
                     
                     <ArticleThumbnail onClick={() => {window.scrollTo({top: 0, behavior: "smooth"});}} to="/article">
                         <ThumbnailContainer>

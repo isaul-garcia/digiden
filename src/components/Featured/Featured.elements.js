@@ -91,6 +91,29 @@ export const ArticleThumbnail = styled(Link)`
     }
 `
 
+export const ArticleThumbnailX = styled.span`
+    position: relative;
+    flex: 49%;
+    padding: 0.25%;
+    height: 38vh;
+    display: flex;
+    cursor: pointer;
+    transition-duration: 0.25s;
+    color: #111113;
+    overflow: hidden;
+    text-decoration: none;
+
+    @media screen and (max-width: 991px) {
+        flex: 100%;
+        height: 380px;
+        padding: 0.25% 0.25% 2% 0.25%;
+
+        &:last-child{
+        padding: 0.25% 0.25% 0.25% 0.25%;
+    }
+    }
+`
+
 export const ArticleThumbnailSingle = styled(ArticleThumbnail)`
     flex: 100%;
     height: 45vh;
